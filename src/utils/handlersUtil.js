@@ -103,8 +103,8 @@ const handlersUtil = {
 
             const html = `
               <div role="gridcell" class="mr-1 text-gray-light eg-download" style="width: 95px;">
-                <span class="css-truncate css-truncate-target d-block">
-                  <span style="margin-right: 5px;">
+                <span class="css-truncate css-truncate-target d-block" style="text-align: right;">
+                  <span style="margin-right: 15px;">
                     ${formattedFileSize}
                   </span>
                   <a style="float: right" href="${data[actualDataIndex].download_url}" title="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." class="tooltipped tooltipped-s"
