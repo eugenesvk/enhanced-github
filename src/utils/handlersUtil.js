@@ -77,8 +77,8 @@ const handlersUtil = {
           const formattedFileSize = commonUtil.getFileSizeAndUnit(data[actualDataIndex]);
 
           commitElem.parentElement.insertAdjacentHTML('beforebegin', `
-            <td class="eg-download">
-              <a class="tooltipped tooltipped-s" href="${data[actualDataIndex].download_url}" title="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents."
+            <td class="eg-download" style="text-align: right;">
+              <a class="tooltipped tooltipped-s" href="${data[actualDataIndex].download_url}" title="⎇🖰 DL. ⎈¦◆🖰 raw" aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents."
                 download="${data[actualDataIndex].name}">
                 <span class="react-directory-download Link--secondary">${formattedFileSize}</span>
               </a>
