@@ -73,7 +73,7 @@ const commonUtil = {
     bytes *= 1000;
 
     const K = 1000;
-    const MEASURE = ['', '', 'k', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y'];
+    const MEASURE = ['', '', ' ', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y'];
     const i = Math.floor(Math.log(bytes) / Math.log(K));
 
     return {
