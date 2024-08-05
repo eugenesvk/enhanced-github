@@ -85,7 +85,7 @@ const handlersUtil = {
             </td>
           `)
         } else {
-          commitElem.parentElement.insertAdjacentHTML('beforebegin', `<td class="eg-download"><div class="react-directory-download"></div></td>`)
+          commitElem.parentElement.insertAdjacentHTML('beforebegin', `<td class="eg-download" style="text-align: right;"><div class="react-directory-download"></div></td>`)
         }
         actualDataIndex++;
         /* if (commitElem) {
