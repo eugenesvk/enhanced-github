@@ -66,14 +66,14 @@ const commonUtil = {
     if (bytes === 0) {
       return {
         size: 0,
-        measure: 'Bytes'
+        measure: ''
       };
     }
 
     bytes *= 1000;
 
     const K = 1000;
-    const MEASURE = ['', 'B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    const MEASURE = ['', '', 'k', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y'];
     const i = Math.floor(Math.log(bytes) / Math.log(K));
 
     return {
@@ -86,7 +86,7 @@ const commonUtil = {
     const size = formatBytes.size;
     const unit = formatBytes.measure;
 
-    return size + ' ' + unit;
+    return size + ' ' + unit; // thin space
   },
   removePrevInstancesOf: function(selector) {
     if (!selector) {
