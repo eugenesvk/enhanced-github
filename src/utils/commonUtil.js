@@ -77,7 +77,7 @@ const commonUtil = {
     const i = Math.floor(Math.log(bytes) / Math.log(K));
 
     return {
-      size: parseFloat((bytes / Math.pow(K, i)).toFixed(2)),
+      size: parseFloat((bytes / Math.pow(K, i)).toFixed(1)),
       measure: MEASURE[i]
     };
   },
