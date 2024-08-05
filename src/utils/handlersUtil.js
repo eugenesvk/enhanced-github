@@ -8,11 +8,11 @@ const handlersUtil = {
     commonUtil.removePrevInstancesOf('.js-file-download');
 
     const btnGroupHtml = `
-      <button aria-label="Copy file contents to clipboard" class="js-file-clipboard btn btn-sm BtnGroup-item file-clipboard-button tooltipped tooltipped-s js-enhanced-github-copy-btn" data-copied-hint="Copied!" type="button" click="selectText()" data-clipboard-target="tbody">
+      <button aria-label="Copy file contents to clipboard" class="js-file-clipboard btn btn-sm BtnGroup-item file-clipboard-button tooltipped-s js-enhanced-github-copy-btn" data-copied-hint="Copied!" type="button" click="selectText()" data-clipboard-target="tbody">
         Copy File
       </button>
       <a href="${data.download_url}" download="${data.name}"
-        aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." class="js-file-download btn btn-sm BtnGroup-item file-download-button tooltipped tooltipped-s">
+        aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." class="js-file-download btn btn-sm BtnGroup-item file-download-button tooltipped-s">
         <span style="margin-right: 5px;">${formattedFileSize}</span>
       </a>`;
 
@@ -78,7 +78,7 @@ const handlersUtil = {
 
           commitElem.parentElement.insertAdjacentHTML('beforebegin', `
             <td class="eg-download" style="text-align: right;">
-              <a class="tooltipped tooltipped-s" href="${data[actualDataIndex].download_url}" title="⎇🖰 DL. ⎈¦◆🖰 raw" aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents."
+              <a class="tooltipped-s" href="${data[actualDataIndex].download_url}" title="⎇🖰 DL. ⎈¦◆🖰 raw" aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents."
                 download="${data[actualDataIndex].name}">
                 <span class="react-directory-download Link--secondary">${formattedFileSize}</span>
               </a>
@@ -101,7 +101,7 @@ const handlersUtil = {
                   <span style="margin-right: 15px;">
                     ${formattedFileSize}
                   </span>
-                  <a style="float: right" href="${data[actualDataIndex].download_url}" title="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." class="tooltipped tooltipped-s"
+                  <a style="float: right" href="${data[actualDataIndex].download_url}" title="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." aria-label="(Option + Click) to download. (Cmd/Ctr + Click) to view raw contents." class="tooltipped-s"
                     download="${data[actualDataIndex].name}">
                   </a>
                 </span>
